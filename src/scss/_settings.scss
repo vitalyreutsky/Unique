@@ -10,15 +10,14 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family-NunitoSans, sans-serif);
   -webkit-text-size-adjust: 100%;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .page__body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
+  background-color: var(--oil-color);
 }
 
 img {

@@ -1,1 +1,18 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+//Bona-Nova
+@include font-face("BonaNova", "../fonts/BonaNova-Regular", 400, normal);
+@include font-face("BonaNova", "../fonts/BonaNova-Bold", 700, normal);
+
+//HindSiliguri
+@include font-face(
+  "HindSiliguri",
+  "../fonts/HindSiliguri-Regular",
+  400,
+  normal
+);
+
+//NunitoSans
+@include font-face("NunitoSans", "../fonts/NunitoSans-ExtraLight", 200, normal);
+@include font-face("NunitoSans", "../fonts/NunitoSans-Light", 300, normal);
+@include font-face("NunitoSans", "../fonts/NunitoSans-Regular", 400, normal);
+@include font-face("NunitoSans", "../fonts/NunitoSans-SemiBold", 600, normal);
+@include font-face("NunitoSans", "../fonts/NunitoSans-Bold", 700, normal);
