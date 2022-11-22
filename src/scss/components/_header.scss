@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.469vw 0.417vw;
+  background: rgba(150, 152, 121, 0.5);
+  box-shadow: 0vw 0.208vw 0.469vw rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(0.26vw);
+  border-bottom: 0.052vw solid rgb(174, 172, 172);
+  z-index: 5;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 7.031vw;
+    height: 3.281vw;
+    margin: 0 auto 0 13.542vw;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2.083vw;
+    }
+  }
+
+  &__link {
+    font-size: 0.938vw;
+    line-height: 1.516vw;
+    color: var(--light-color);
+  }
+}
