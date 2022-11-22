@@ -1,0 +1,128 @@
+.mission {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 8.854vw;
+  .title {
+    margin-bottom: 2.083vw;
+  }
+
+  &__inner {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 7%;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background: rgba(0, 0, 0, 0.62);
+      opacity: 0.76;
+      filter: blur(3.646vw);
+      z-index: -1;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.563vw;
+    grid-row-gap: 2.604vw;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease-out;
+    transform: translateY(0);
+    &:hover {
+      transform: translateY(-1.094vw);
+      .card__image img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 17%;
+    left: 6%;
+    width: 28.75vw;
+    height: 29.896vw;
+    z-index: -1;
+  }
+}
+
+.card {
+  height: 20.625vw;
+  border-radius: 1.302vw;
+  backdrop-filter: blur(0.104vw);
+  overflow: hidden;
+  &__image {
+    img {
+      width: 100%;
+      height: 20.625vw;
+      object-position: 0 -1vw;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.35s ease-out;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 10vw;
+    padding: 0.625vw 1.042vw;
+    background: rgba(40, 40, 40, 0.65);
+    border-top: 0.104vw solid rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(0.26vw);
+    z-index: 2;
+  }
+
+  &__content-top {
+    margin-bottom: 0.521vw;
+    display: flex;
+    span {
+      font-family: var(--font-family-BonaNova);
+      font-weight: 700;
+      font-size: 2.1vw;
+      line-height: 2.5vw;
+      color: var(--oil-color);
+      margin-right: 1.042vw;
+      font-feature-settings: "pnum" on, "lnum" on;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 1.75vw;
+      line-height: 2.486vw;
+      color: var(--light-color);
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__content-text {
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 1.421vw;
+    color: var(--light-color);
+  }
+}
+
+.mission__card:nth-child(3) .card__image img {
+  object-position: 0 -5vw;
+}
+
+.mission__card:nth-child(4) .card__image img {
+  object-position: 0 -3vw;
+}
+
+.mission__card:nth-child(6) .card__image img {
+  object-position: 0 -2.7vw;
+}
