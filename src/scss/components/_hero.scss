@@ -34,7 +34,7 @@
     position: relative;
     min-height: 100vh;
     color: var(--light-color);
-    padding-top: 7vw;
+    padding-top: 6vw;
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -56,20 +56,20 @@
       line-height: 4.167vw;
       text-transform: none;
     }
-    span:last-child {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 21%;
-        right: 0%;
-        width: 3.042vw;
-        height: 0.3vw;
-        background-color: var(--oil-color);
-        transform: rotate(6deg);
-        border-radius: 100%;
-      }
-    }
+    //span:last-child {
+    //  position: relative;
+    //  &::after {
+    //    content: "";
+    //    position: absolute;
+    //    top: 21%;
+    //    right: 0%;
+    //    width: 3.042vw;
+    //    height: 0.3vw;
+    //    background-color: var(--oil-color);
+    //    transform: rotate(6deg);
+    //    border-radius: 100%;
+    //  }
+    //}
   }
 
   &__subtitle {
