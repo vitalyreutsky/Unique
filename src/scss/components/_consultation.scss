@@ -1,5 +1,5 @@
 .consultation {
-  //padding-bottom: 10vw;
+  padding-top: 10vw;
   &__items {
     width: auto;
   }
@@ -49,16 +49,27 @@
 }
 
 .consultation-item {
+  width: 26.875vw;
   &:not(:last-child) {
-    margin-bottom: 1.823vw;
+    margin-bottom: 2vw;
+  }
+
+  &:first-of-type {
+    .consultation-icon {
+      width: 6vw;
+      height: 3.646vw;
+      margin-left: -1vw;
+      margin-right: 1vw;
+    }
   }
 }
 
 .consultation-icon {
   background-color: transparent;
-  position: relative;
   width: 3.906vw;
   height: 3.906vw;
+  margin-right: 2.135vw;
+  flex-shrink: 0;
 }
 
 .consultation-descr {

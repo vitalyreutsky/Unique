@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   .title {
-    margin-bottom: 3.073vw;
+    margin-bottom: 4.073vw;
   }
   &::after {
     content: "";
@@ -21,7 +21,7 @@
     z-index: 1;
   }
   &__wrapper {
-    padding: 3.646vw 0vw;
+    padding: 3.646vw 0vw 6vw;
     background-color: #272727;
   }
   &__inner {
@@ -39,7 +39,7 @@
   &__item {
     display: flex;
     &:not(:last-child) {
-      margin-bottom: 1.563vw;
+      margin-bottom: 2vw;
     }
   }
 
@@ -113,7 +113,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 18.698vw;
-  height: 46.198vw;
+  height: 47.198vw;
 }
 
 @keyframes shadow {
@@ -140,8 +140,6 @@
 @keyframes rotate-moon {
   0% {
     transform: rotate(0deg) scale(1);
-    //width: 14vw;
-    //height: 14vw;
   }
 
   50% {
@@ -150,7 +148,5 @@
 
   100% {
     transform: rotate(-360deg) scale(1);
-    //width: 14vw;
-    //height: 14vw;
   }
 }

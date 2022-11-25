@@ -47,12 +47,25 @@
   &:not(:last-child) {
     margin-right: 1.354vw;
   }
-  img {
+  svg {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 6.198vw;
     height: auto;
+
+    .apple,
+    .google {
+      fill: var(--black-color);
+    }
+  }
+
+  &:hover {
+    background-color: var(--oil-color);
+    .apple,
+    .google {
+      fill: var(--light-color);
+    }
   }
 }
 
