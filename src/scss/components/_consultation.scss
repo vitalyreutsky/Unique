@@ -4,9 +4,6 @@
     width: auto;
   }
 
-  &__text {
-  }
-
   &__image {
     transform: translateY(-23vw);
     overflow: hidden;
@@ -70,9 +67,6 @@
   height: 3.906vw;
   margin-right: 2.135vw;
   flex-shrink: 0;
-}
-
-.consultation-descr {
 }
 
 @keyframes consultation-image-rotate {

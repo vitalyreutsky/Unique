@@ -20,6 +20,10 @@
     height: 3.281vw;
     margin: 0 auto 0 13.542vw;
   }
+
+  &-bg {
+    display: none;
+  }
 }
 
 .nav {
@@ -38,5 +42,13 @@
     font-size: 0.938vw;
     line-height: 1.516vw;
     color: var(--light-color);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #b01d10;
+    }
+  }
+
+  .header-btns {
+    display: none;
   }
 }

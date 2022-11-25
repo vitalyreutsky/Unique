@@ -1,6 +1,5 @@
 .mission {
   position: relative;
-  min-height: 100vh;
   padding-bottom: 8.854vw;
   .title {
     margin-bottom: 2.083vw;
@@ -35,11 +34,13 @@
     flex-direction: column;
     transition: all 0.35s ease-out;
     transform: translateY(0);
-    &:hover {
-      transform: translateY(-1.094vw);
-      .card__image img {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
+    @include for-desktop {
+      &:hover {
+        transform: translateY(-1.094vw);
+        .card__image img {
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+        }
       }
     }
   }
