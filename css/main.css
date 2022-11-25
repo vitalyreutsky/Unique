@@ -117,6 +117,7 @@ p {
 .page__body {
   background-color: var(--oil-color);
   height: 100%;
+  position: inherit !important;
 }
 
 img {
@@ -396,8 +397,11 @@ a {
   align-items: center;
   position: relative;
   z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.hero__btn img {
+.hero__btn svg {
   width: 9.635vw;
   height: auto;
   display: -webkit-box;
@@ -409,9 +413,25 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hero__btn svg .apple,
+.hero__btn svg .google {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero__btn:not(:last-child) {
   margin-right: 1.302vw;
+}
+.hero__btn:hover {
+  background-color: var(--light-color);
+}
+.hero__btn:hover .apple,
+.hero__btn:hover .google {
+  fill: var(--black-color);
 }
 .hero__image {
   position: absolute;
@@ -650,7 +670,7 @@ a {
   height: 100%;
 }
 .about .title {
-  margin-bottom: 3.073vw;
+  margin-bottom: 4.073vw;
 }
 .about::after {
   content: "";
@@ -671,7 +691,7 @@ a {
   z-index: 1;
 }
 .about__wrapper {
-  padding: 3.646vw 0vw;
+  padding: 3.646vw 0vw 6vw;
   background-color: #272727;
 }
 .about__inner {
@@ -696,7 +716,7 @@ a {
   display: flex;
 }
 .about__item:not(:last-child) {
-  margin-bottom: 1.563vw;
+  margin-bottom: 2vw;
 }
 .about__num {
   font-family: var(--font-family-BonaNova);
@@ -782,7 +802,7 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 18.698vw;
-  height: 46.198vw;
+  height: 47.198vw;
 }
 
 @-webkit-keyframes shadow {
@@ -863,7 +883,7 @@ a {
   }
 }
 .offers {
-  padding: 8.854vw 0vw;
+  padding: 8.854vw 0vw 11vw;
   position: relative;
 }
 .offers .title {
@@ -1138,6 +1158,9 @@ a {
   transition: all 0.4s ease-out;
 }
 
+.consultation {
+  padding-top: 10vw;
+}
 .consultation__items {
   width: auto;
 }
@@ -1186,15 +1209,26 @@ a {
   height: 39.948vw !important;
 }
 
+.consultation-item {
+  width: 26.875vw;
+}
 .consultation-item:not(:last-child) {
-  margin-bottom: 1.823vw;
+  margin-bottom: 2vw;
+}
+.consultation-item:first-of-type .consultation-icon {
+  width: 6vw;
+  height: 3.646vw;
+  margin-left: -1vw;
+  margin-right: 1vw;
 }
 
 .consultation-icon {
   background-color: transparent;
-  position: relative;
   width: 3.906vw;
   height: 3.906vw;
+  margin-right: 2.135vw;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 @-webkit-keyframes consultation-image-rotate {
@@ -1366,7 +1400,7 @@ a {
 .footer-btn:not(:last-child) {
   margin-right: 1.354vw;
 }
-.footer-btn img {
+.footer-btn svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,6 +1412,17 @@ a {
   align-items: center;
   width: 6.198vw;
   height: auto;
+}
+.footer-btn svg .apple,
+.footer-btn svg .google {
+  fill: var(--black-color);
+}
+.footer-btn:hover {
+  background-color: var(--oil-color);
+}
+.footer-btn:hover .apple,
+.footer-btn:hover .google {
+  fill: var(--light-color);
 }
 
 .copyright {
@@ -1606,9 +1651,14 @@ a {
     -ms-transform: rotate(-33deg);
     transform: rotate(-33deg);
   }
+  .header__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
   .header__logo {
     width: 17.578vw;
-    height: 8.203vw;
+    height: auto;
     margin: 0 auto;
   }
   .nav {
@@ -1617,14 +1667,22 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 53.776vw;
+    width: 100%;
     height: 100vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-    background-color: var(--oil-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
   }
   .nav__list {
+    width: 53.776vw;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1632,15 +1690,55 @@ a {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-  }
-  .nav__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--oil-color);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    overflow: auto;
   }
   .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .nav__item:not(:last-of-type) {
     margin-bottom: 3.906vw;
+  }
+  .nav__link {
+    font-weight: 600;
+    font-size: 3.906vw;
+    line-height: 6.25vw;
+  }
+  .hide-backdrop-filter {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .menu--active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .mob-menu--show {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    -webkit-backdrop-filter: blur(0.37vw);
+    backdrop-filter: blur(0.37vw);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .hero__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
