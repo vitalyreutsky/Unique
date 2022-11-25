@@ -1,5 +1,5 @@
 .consultation {
-  padding-bottom: 10vw;
+  //padding-bottom: 10vw;
   &__items {
     width: auto;
   }
@@ -20,7 +20,7 @@
     height: auto;
     margin-right: 3vw;
     &--rotate {
-      animation: consultation-image-rotate 10s infinite linear;
+      animation: consultation-image-rotate 20s infinite linear;
     }
     &::after {
       content: "";

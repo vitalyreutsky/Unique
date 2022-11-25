@@ -45,7 +45,7 @@ async function func(arr) {
   setTimeout(() => {
     mainArr.forEach((el) => {
       el.forEach((el) => {
-        el.classList.remove("change");
+        //el.classList.remove("change");
         el.classList.remove("change-border");
       });
     });

@@ -2,27 +2,32 @@
   <div class="about__wrapper">
     <div class="container">
       <div class="about__inner">
-        <div class="about__images">
-          <div class="about-statue">
-            <picture>
-              <source srcset="img/about-statue.webp" type="image/webp" />
-              <img
-                loading="lazy"
-                src="img/about-statue.png"
-                class="image"
-                alt="Statue"
-              />
-            </picture>
+        <div class="about-images">
+          <div class="about-radius">
+            <div class="about-radius__wrapper">
+              <picture>
+                <source srcset="img/moon.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="img/moon.png"
+                  class="image about-radius__moon"
+                  alt="Moon"
+                />
+              </picture>
+              <div class="about-radius__shadow"></div>
+            </div>
           </div>
-          <div class="about-moon">
-            <picture>
-              <source srcset="img/moon.webp" type="image/webp" />
-              <img loading="lazy" src="img/moon.png" class="image" alt="Moon" />
-            </picture>
-            <div class="about-moom__el"></div>
-          </div>
-          <div class="about-circle"></div>
+          <picture>
+            <source srcset="img/about-statue.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="img/about-statue.png"
+              class="image about-radius__statue"
+              alt="Statue"
+            />
+          </picture>
         </div>
+
         <div class="about__content">
           <h2 class="title">О проекте</h2>
           <div class="about__items">

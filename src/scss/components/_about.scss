@@ -32,11 +32,6 @@
     z-index: 2;
   }
 
-  &__images {
-    position: relative;
-    transform: translate(6vw, 3vw);
-  }
-
   &__content {
     max-width: 35vw;
   }
@@ -69,84 +64,95 @@
   }
 }
 
-.about-statue {
-  width: 18.698vw;
-  height: 50.198vw;
+.about-images {
   position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-  }
 }
-.about-moon {
-  position: absolute;
-  top: 5%;
-  left: 9%;
-  width: 14.604vw;
-  height: 14.604vw;
-  z-index: -1;
-  -webkit-transform-origin: 7vw 21vw;
-  -ms-transform-origin: 7vw 21vw;
-  transform-origin: 7vw 20.4vw;
-  animation: moom-rotate 10s infinite linear;
+.about-radius {
+  width: 30.833vw;
+  height: 30.833vw;
+  border: 0.104vw solid #969879;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  animation: 20s rotate-wrapper linear infinite;
+}
+.about-radius__wrapper {
+  position: relative;
+  width: 14.583vw;
+  height: 14.583vw;
   overflow: hidden;
-  border-radius: 50%;
+  margin-top: -20%;
+  border-radius: 100%;
+  animation: 20s rotate-moon linear infinite;
+}
+.about-radius__moon {
+  width: 14.583vw;
+  height: 14.583vw;
+  transition: all 5s ease-in-out;
 }
 
-.about-moom__el {
+.about-radius__shadow {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10.208vw;
-  height: 10.208vw;
-  background-color: #272727;
-  border-radius: 50%;
-  transform: translate(0, 0);
-  animation: moom-el 10s infinite linear;
-  animation-direction: alternate;
-  z-index: 2;
-}
-
-.about-circle {
-  position: absolute;
-  top: 49%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0);
-  width: 31.281vw;
-  height: 31.281vw;
+  width: 14.583vw;
+  height: 14.583vw;
+  background: #101010;
   border-radius: 100%;
-  border: 0.104vw solid var(--oil-color);
-  z-index: -2;
+  transform: translateX(-100%);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(39, 39, 39, 0.9);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(39, 39, 39, 0.9);
+  box-shadow: 0px 0px 20px 2px rgba(39, 39, 39, 0.9);
+  opacity: 0.95;
+  animation: 10s shadow linear infinite;
 }
 
-@keyframes moom-rotate {
+.about-radius__statue {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18.698vw;
+  height: 46.198vw;
+}
+
+@keyframes shadow {
   0% {
-    width: 14.604vw;
-    height: 14.604vw;
+    transform: translateX(-100%);
   }
   50% {
-    width: 7vw;
-    height: 7vw;
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rotate-wrapper {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    width: 14.604vw;
-    height: 14.604vw;
   }
 }
 
-@keyframes moom-el {
+@keyframes rotate-moon {
   0% {
-    left: 4vw;
-    top: 3vw;
+    transform: rotate(0deg);
+    width: 14vw;
+    height: 14vw;
   }
+
   50% {
-    left: 10vw;
-    top: 4vw;
+    width: 6.167vw;
+    height: 6.167vw;
+    margin-top: -10%;
   }
 
   100% {
-    left: -6vw;
-    top: 3vw;
+    transform: rotate(-360deg);
+    width: 14vw;
+    height: 14vw;
   }
 }

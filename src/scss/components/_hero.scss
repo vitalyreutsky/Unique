@@ -32,7 +32,7 @@
 
   &__content {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 1.563vw);
     color: var(--light-color);
     padding-top: 6vw;
     width: fit-content;
