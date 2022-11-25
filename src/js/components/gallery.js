@@ -25,10 +25,10 @@ async function func(arr) {
     await new Promise((resolve) =>
       setTimeout(() => {
         arr[index].forEach((el) => {
-          el.classList.toggle("add");
+          el.classList.toggle("change");
         });
         arr[index].forEach((el) => {
-          el.classList.remove("addBorder");
+          el.classList.remove("change-border");
         });
 
         resolve();
@@ -38,15 +38,15 @@ async function func(arr) {
 
   mainArr.forEach((el) => {
     el.forEach((el) => {
-      el.classList.add("addBorder");
+      el.classList.add("change-border");
     });
   });
 
   setTimeout(() => {
     mainArr.forEach((el) => {
       el.forEach((el) => {
-        el.classList.remove("add");
-        el.classList.remove("addBorder");
+        el.classList.remove("change");
+        el.classList.remove("change-border");
       });
     });
 
