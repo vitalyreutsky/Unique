@@ -71,7 +71,7 @@
 
 .about-statue {
   width: 18.698vw;
-  height: 43.198vw;
+  height: 50.198vw;
   position: relative;
   img {
     width: 100%;
@@ -80,12 +80,14 @@
 }
 .about-moon {
   position: absolute;
-  top: 0%;
-  left: 17%;
-  width: 12vw;
-  height: 12vw;
+  top: 6%;
+  left: 9%;
+  width: 14.604vw;
+  height: 14.604vw;
   z-index: -1;
-  transform-origin: 6vw 18.3vw;
+  -webkit-transform-origin: 7vw 21vw;
+  -ms-transform-origin: 7vw 21vw;
+  transform-origin: 7vw 20.4vw;
   animation: moom-rotate 10s infinite linear;
   overflow: hidden;
   border-radius: 50%;
@@ -107,11 +109,11 @@
 
 .about-circle {
   position: absolute;
-  top: 45%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  width: 28.833vw;
-  height: 28.833vw;
+  width: 31.281vw;
+  height: 31.281vw;
   border-radius: 100%;
   border: 0.104vw solid var(--oil-color);
   z-index: -2;
@@ -119,8 +121,8 @@
 
 @keyframes moom-rotate {
   0% {
-    width: 12vw;
-    height: 12vw;
+    width: 14.604vw;
+    height: 14.604vw;
   }
   50% {
     width: 7vw;
@@ -128,8 +130,8 @@
   }
   100% {
     transform: rotate(360deg);
-    width: 12vw;
-    height: 12vw;
+    width: 14.604vw;
+    height: 14.604vw;
   }
 }
 
