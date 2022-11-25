@@ -1,25 +1,57 @@
-//const items = document.querySelectorAll(".author-images__item");
+const itemFirst = document.querySelectorAll(".author-first");
+const itemSecond = document.querySelectorAll(".author-second");
+const itemThird = document.querySelectorAll(".author-third");
+const itemFourth = document.querySelectorAll(".author-fourth");
+const itemFifth = document.querySelectorAll(".author-fifth");
+const itemSixth = document.querySelectorAll(".author-sixth");
+const itemSeventh = document.querySelectorAll(".author-seventh");
+const itemNineth = document.querySelectorAll(".author-nineth");
+const itemTenth = document.querySelectorAll(".author-tenth");
 
-//function addClassToItem(arr) {
-//  for (let i = 0; i < arr.length; i++) {
-//    setTimeout(() => {
-//      arr[i].classList.add("add");
-//    }, 500 * (i + 1));
-//  }
-//}
+const mainArr = [
+  itemSecond,
+  itemThird,
+  itemFirst,
+  itemNineth,
+  itemSeventh,
+  itemFourth,
+  itemTenth,
+  itemSixth,
+  itemFifth,
+];
 
-//function removeClassToItem(arr) {
-//  for (let i = 0; i < arr.length; i++) {
-//    setTimeout(() => {
-//      arr[i].classList.remove("add");
-//    }, 500 * (i + 1));
-//  }
-//}
+async function func(arr) {
+  for (let index = 0; index < arr.length; index++) {
+    await new Promise((resolve) =>
+      setTimeout(() => {
+        arr[index].forEach((el) => {
+          el.classList.toggle("add");
+        });
+        arr[index].forEach((el) => {
+          el.classList.remove("addBorder");
+        });
 
-//setTimeout(() => {
-//  addClassToItem(items);
-//}, 3000);
+        resolve();
+      }, 600)
+    );
+  }
 
-//setTimeout(() => {
-//  removeClassToItem(items);
-//}, 7000);
+  mainArr.forEach((el) => {
+    el.forEach((el) => {
+      el.classList.add("addBorder");
+    });
+  });
+
+  setTimeout(() => {
+    mainArr.forEach((el) => {
+      el.forEach((el) => {
+        el.classList.remove("add");
+        el.classList.remove("addBorder");
+      });
+    });
+
+    setTimeout(() => func(arr.reverse()), 600);
+  }, 1000);
+}
+
+func(mainArr);

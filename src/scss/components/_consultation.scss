@@ -1,0 +1,71 @@
+.consultation {
+  padding-bottom: 10vw;
+  &__items {
+    width: auto;
+  }
+
+  &__text {
+  }
+
+  &__image {
+    transform: translateY(-23vw);
+    overflow: hidden;
+    width: auto;
+    height: auto;
+  }
+
+  &__image-bg {
+    position: relative;
+    width: 48.229vw;
+    height: auto;
+    margin-right: 3vw;
+    &--rotate {
+      animation: consultation-image-rotate 10s infinite linear;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0vw;
+      left: 50%;
+      transform: translate(-50%, 0px);
+      width: 36vw;
+      height: 21vw;
+      background-image: url("../img/consultation-shadow.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  &__image-statue {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 28.385vw !important;
+    height: 39.948vw !important;
+  }
+}
+
+.consultation-item {
+  &:not(:last-child) {
+    margin-bottom: 1.823vw;
+  }
+}
+
+.consultation-icon {
+  background-color: transparent;
+  position: relative;
+  width: 3.906vw;
+  height: 3.906vw;
+}
+
+.consultation-descr {
+}
+
+@keyframes consultation-image-rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}

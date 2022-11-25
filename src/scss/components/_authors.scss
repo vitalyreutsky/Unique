@@ -102,6 +102,7 @@
   &__item {
     background-color: var(--oil-color);
     border: 0.1vw solid var(--light-color);
+    transition: all 0.4s ease-out;
   }
 }
 
@@ -175,5 +176,11 @@
 }
 
 .add {
-  opacity: 0;
+  background-color: transparent;
+  transition: all 0.4s ease-out;
+}
+
+.addBorder {
+  border: 0.1vw solid transparent;
+  transition: all 0.4s ease-out;
 }
