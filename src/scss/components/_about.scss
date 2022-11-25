@@ -139,20 +139,18 @@
 
 @keyframes rotate-moon {
   0% {
-    transform: rotate(0deg);
-    width: 14vw;
-    height: 14vw;
+    transform: rotate(0deg) scale(1);
+    //width: 14vw;
+    //height: 14vw;
   }
 
   50% {
-    width: 6.167vw;
-    height: 6.167vw;
-    margin-top: -10%;
+    transform: rotate(-180deg) scale(0.5);
   }
 
   100% {
-    transform: rotate(-360deg);
-    width: 14vw;
-    height: 14vw;
+    transform: rotate(-360deg) scale(1);
+    //width: 14vw;
+    //height: 14vw;
   }
 }
