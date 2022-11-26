@@ -248,29 +248,25 @@
 
     &__image {
       width: 71.146vw;
-      height: 100%;
+      height: 97.005vw;
       border-radius: 0vw 0vw 3.906vw 3.906vw;
     }
 
     &__images-wrapper {
-      width: 71.146vw;
-      height: 97.005vw;
+      width: 100%;
       border-radius: 0vw 0vw 3.906vw 3.906vw;
     }
   }
 
   .statue-bg {
     width: 100%;
+    border-radius: 0vw 0vw 3.906vw 3.906vw;
   }
 
   .statue {
     right: 0;
     width: 40.104vw;
     height: 100%;
-  }
-
-  .statue__red-bg {
-    border-radius: 0vw 0vw 3.906vw 3.906vw;
   }
 
   //!title
@@ -933,12 +929,12 @@
 
     &__image {
       width: 100%;
+      height: 128.533vw;
       border-radius: 0vw 0vw 8vw 8vw;
     }
 
     &__images-wrapper {
-      width: 100%;
-      height: 128.533vw;
+      height: 100%;
       border-radius: 0vw 0vw 8vw 8vw;
     }
   }
