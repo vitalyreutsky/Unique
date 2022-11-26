@@ -138,6 +138,7 @@
 
       transform: translateX(-100%);
       transition: transform 0.3s ease-in-out;
+      overflow: auto;
 
       &::before {
         content: "";
@@ -268,6 +269,10 @@
     height: 100%;
   }
 
+  .statue__red-bg {
+    border-radius: 0vw 0vw 3.906vw 3.906vw;
+  }
+
   //!title
   .title {
     font-size: 9.115vw;
@@ -320,6 +325,7 @@
     &__content {
       min-height: 33.5vw;
       padding: 1.693vw 2.604vw;
+      backdrop-filter: blur(0.651vw);
     }
 
     &__content-top {
@@ -657,7 +663,8 @@
     padding-bottom: 15.625vw;
 
     &::after {
-      height: 25vw;
+      height: 35vw;
+      opacity: 0.5;
     }
     .title {
       margin-bottom: 6.51vw;
@@ -1167,7 +1174,7 @@
 
   .author-item {
     &:nth-child(2n) {
-      padding-bottom: 15vw;
+      padding-bottom: 21vw;
     }
 
     &:not(:last-child) {
@@ -1266,7 +1273,7 @@
 
   //!consultation
   .consultation {
-    padding-top: 9.531vw;
+    padding-top: 4.531vw;
     .container {
       padding: 0;
     }
