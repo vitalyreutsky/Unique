@@ -23,9 +23,7 @@
 
 .accordion {
   &__item {
-    &:not(:last-child) {
-      border-bottom: 0.052vw solid rgba(255, 255, 255, 0.5);
-    }
+    border-bottom: 0.052vw solid rgba(255, 255, 255, 0.5);
     margin-bottom: 2.604vw;
   }
 

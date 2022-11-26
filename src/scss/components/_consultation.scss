@@ -45,6 +45,10 @@
   }
 }
 
+.consultation-descr__mob {
+  display: none;
+}
+
 .consultation-item {
   width: 26.875vw;
   &:not(:last-child) {
