@@ -1,20 +1,21 @@
 .offers {
-  padding: 8.854vw 0vw 11vw;
+  padding: 8.854vw 0vw 9vw;
   position: relative;
-  .title {
-    margin-bottom: 1.042vw;
-  }
+
   &__text {
     font-weight: 600;
     font-size: 1.823vw;
     line-height: 2.344vw;
     color: var(--light-color);
-    margin-bottom: 2.604vw;
+    margin-bottom: 1vw;
   }
 
   &__items {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2.865vw;
     width: 38.854vw;
+    gap: 1.302vw;
   }
 
   &__image {
@@ -38,9 +39,6 @@
   width: 28vw;
   &:first-of-type {
     width: auto;
-  }
-  &:not(:last-child) {
-    margin-bottom: 1.302vw;
   }
 }
 

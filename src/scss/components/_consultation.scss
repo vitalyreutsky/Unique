@@ -1,11 +1,12 @@
 .consultation {
-  padding-top: 10vw;
+  padding-top: 12vw;
   &__items {
     width: auto;
+    gap: 1.5vw;
   }
 
   &__image {
-    transform: translateY(-23vw);
+    transform: translateY(-20vw);
     overflow: hidden;
     width: auto;
     height: auto;
@@ -17,7 +18,7 @@
     height: auto;
     margin-right: 3vw;
     &--rotate {
-      animation: consultation-image-rotate 20s infinite linear;
+      animation: consultation-image-rotate 40s infinite linear;
     }
     &::after {
       content: "";
@@ -51,9 +52,6 @@
 
 .consultation-item {
   width: 26.875vw;
-  &:not(:last-child) {
-    margin-bottom: 2vw;
-  }
 
   &:first-of-type {
     .consultation-icon {

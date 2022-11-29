@@ -9,14 +9,14 @@ const itemNineth = document.querySelectorAll(".author-nineth");
 const itemTenth = document.querySelectorAll(".author-tenth");
 
 const mainArr = [
-  itemSecond,
-  itemThird,
+  itemSixth,
   itemFirst,
   itemNineth,
+  itemThird,
   itemSeventh,
-  itemFourth,
+  itemSecond,
   itemTenth,
-  itemSixth,
+  itemFourth,
   itemFifth,
 ];
 
@@ -27,31 +27,13 @@ async function func(arr) {
         arr[index].forEach((el) => {
           el.classList.toggle("change");
         });
-        arr[index].forEach((el) => {
-          el.classList.remove("change-border");
-        });
 
         resolve();
-      }, 600)
+      }, 700)
     );
   }
 
-  mainArr.forEach((el) => {
-    el.forEach((el) => {
-      el.classList.add("change-border");
-    });
-  });
-
-  setTimeout(() => {
-    mainArr.forEach((el) => {
-      el.forEach((el) => {
-        //el.classList.remove("change");
-        el.classList.remove("change-border");
-      });
-    });
-
-    setTimeout(() => func(arr.reverse()), 600);
-  }, 1000);
+  setTimeout(() => func(arr.reverse()), 700);
 }
 
 func(mainArr);

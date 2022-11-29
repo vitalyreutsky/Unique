@@ -7,7 +7,7 @@
     font-size: 1.823vw;
     line-height: 2.344vw;
     color: var(--light-color);
-    margin-bottom: 5.208vw;
+    margin-bottom: 3.208vw;
   }
 
   &__items {
@@ -101,8 +101,56 @@
 
   &__item {
     background-color: var(--oil-color);
-    border: 0.026vw solid var(--light-color);
+    border: 1px solid var(--light-color);
     transition: all 0.4s ease-out;
+
+    &:nth-child(1) {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    &:nth-child(2) {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(3) {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(4) {
+      border-left: none;
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(5) {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(6) {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(7) {
+      border: none;
+    }
+
+    &:nth-child(8) {
+      border-bottom: none;
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(9) {
+      border-bottom: none;
+      border-right: none;
+      border-top: none;
+    }
   }
 }
 
@@ -114,16 +162,18 @@
   width: 34.583vw;
   height: 28.125vw;
   .author-images__img {
-    top: 51%;
-    left: 50.5%;
+    top: 50.8%;
+    left: 50.3%;
     transform: translate(-50%, -50%);
-    width: 24.4vw;
+    width: 24.1vw;
     height: auto;
   }
 
   .author-images__items {
-    width: 24.8vw;
-    height: 18.4vw;
+    width: 24.3vw;
+    height: 18.1vw;
+    left: 50.4%;
+    top: 50.1%;
   }
 }
 
@@ -132,16 +182,17 @@
   height: 28.021vw;
 
   .author-images__img {
-    top: 51%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 29vw;
-    height: auto;
+    width: 28.8vw;
+    height: 21.2vw;
   }
 
   .author-images__items {
-    width: 28.9vw;
-    height: 21.7vw;
+    width: 28.8vw;
+    height: 21.2vw;
+    top: 50%;
   }
 
   .author-decor {
@@ -177,10 +228,5 @@
 
 .change {
   background-color: transparent;
-  transition: all 0.4s ease-out;
-}
-
-.change-border {
-  border: 0.1vw solid transparent !important;
   transition: all 0.4s ease-out;
 }

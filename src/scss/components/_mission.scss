@@ -24,8 +24,8 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1.563vw;
-    grid-row-gap: 2.604vw;
+    grid-column-gap: 1.303vw;
+    grid-row-gap: 1.303vw;
   }
 
   &__card {
@@ -57,8 +57,9 @@
 
 .card {
   height: 20.625vw;
+  width: 22.865vw;
   border-radius: 1.302vw;
-  border: 0.050vw solid rgba(0, 0, 0, 0.24);
+  border: 0.05vw solid rgba(0, 0, 0, 0.24);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.2) 0%,
