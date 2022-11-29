@@ -29,12 +29,13 @@ p {
   height: 100%;
   font-family: var(--font-family-NunitoSans, sans-serif);
   -webkit-text-size-adjust: 100%;
-  font-size: 20px;
+  font-size: 1.042vw;
   font-weight: 400;
 }
 
 .page__body {
   background-color: var(--oil-color);
+  height: 100%;
   position: inherit !important;
 }
 
