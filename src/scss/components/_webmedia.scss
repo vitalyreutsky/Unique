@@ -56,8 +56,10 @@
       line-height: 0.833vw;
       color: #e3e3e3;
     }
-    &:hover {
-      animation: 0.35s tremor ease-out;
+    @include for-desktop {
+      &:hover {
+        animation: 0.35s tremor ease-out;
+      }
     }
   }
 }

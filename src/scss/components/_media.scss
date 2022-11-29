@@ -1100,6 +1100,10 @@
       margin-bottom: 2.667vw;
     }
 
+    .hero__btns::after {
+      display: none;
+    }
+
     &__container {
       display: flex;
       flex-direction: column;

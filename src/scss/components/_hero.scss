@@ -132,11 +132,13 @@
       margin-right: 1.302vw;
     }
 
-    &:hover {
-      background-color: var(--light-color);
-      .apple,
-      .google {
-        fill: var(--black-color);
+    @include for-desktop {
+      &:hover {
+        background-color: var(--light-color);
+        .apple,
+        .google {
+          fill: var(--black-color);
+        }
       }
     }
   }
