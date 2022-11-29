@@ -19,6 +19,12 @@ p {
   padding: 0;
 }
 
+* {
+  outline: none;
+  outline-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .page {
   height: 100%;
   font-family: var(--font-family-NunitoSans, sans-serif);

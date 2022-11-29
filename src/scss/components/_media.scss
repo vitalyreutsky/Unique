@@ -248,12 +248,12 @@
 
     &__image {
       width: 71.146vw;
-      height: 97.005vw;
       border-radius: 0vw 0vw 3.906vw 3.906vw;
     }
 
     &__images-wrapper {
       width: 100%;
+      height: 97.005vw;
       border-radius: 0vw 0vw 3.906vw 3.906vw;
     }
   }
@@ -1203,12 +1203,13 @@
       margin-bottom: -1vw;
     }
     .author-images__img {
-      width: 63vw;
+      width: 64vw;
+      top: 50.3%;
     }
 
     .author-images__items {
-      width: 63vw;
-      height: 47.5vw;
+      width: 64vw;
+      height: 48vw;
       top: 50%;
     }
   }
@@ -1220,13 +1221,13 @@
     width: 100%;
     height: auto;
     .author-images__img {
-      width: 73vw;
+      width: 74.9vw;
       height: auto;
     }
 
     .author-images__items {
-      width: 73vw;
-      height: 55vw;
+      width: 74.9vw;
+      height: 56.3vw;
     }
   }
 
@@ -1291,7 +1292,7 @@
     &__image-bg {
       width: 108.8vw;
       height: auto;
-      transform: translateX(-6vw);
+      transform: translateX(-5vw);
 
       &::after {
         height: 20.333vw;
