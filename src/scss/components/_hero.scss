@@ -150,6 +150,7 @@
     width: 34.948vw;
     height: 100%;
     border-radius: 0vw 0vw 1.563vw 1.563vw;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     overflow: hidden;
     z-index: 3;
   }
