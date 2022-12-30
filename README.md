@@ -1,1 +1,1 @@
-### _Ссылка на проект_: [The Unique Taste](https://vitalyreutsky.github.io/Unique/)
+### _Ссылка на проект_: [The Unique Taste](https://uniqtst.com//)
